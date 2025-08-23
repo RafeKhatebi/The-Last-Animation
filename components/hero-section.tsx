@@ -41,7 +41,7 @@ export function HeroSection() {
               <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-white leading-tight tracking-wide drop-shadow-2xl">
                 {language === "en" ? (
                   <span className="animate-fade-in-up block pt-12">
-                    <span className="text-white">THE FIRST</span>{" "}
+                    <span className="text-white">THE LAST</span>{" "}
                     <span className="text-amber-300">ANIMATION</span>
                   </span>
                 ) : (

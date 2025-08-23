@@ -73,20 +73,20 @@ export function StorySection() {
   return (
     <section
       id="story"
-      className={`py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-slate-900 to-slate-800 ${language === "fa" ? "font-arabic" : ""}`}
+      className={`py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-background to-muted/20 ${language === "fa" ? "font-arabic" : ""}`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">
           <Badge
             variant="outline"
-            className="mb-4 sm:mb-6 border-amber-400 text-amber-400 px-4 py-2 text-sm sm:text-base"
+            className="mb-4 sm:mb-6 border-primary text-primary px-4 py-2 text-sm sm:text-base"
           >
             {language === "en" ? "Our Story" : "داستان ما"}
           </Badge>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground mb-4 sm:mb-6 leading-tight">
             {language === "en" ? "Behind the Animation" : "پشت صحنه انیمیشن"}
           </h2>
-          <p className="text-lg sm:text-xl lg:text-2xl text-amber-100 max-w-4xl mx-auto leading-relaxed px-4">
+          <p className="text-lg sm:text-xl lg:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed px-4">
             {language === "en"
               ? "Discover the creative process and artistic vision that brought this award-winning animation to life, from initial concept to international recognition."
               : "فرآیند خلاقانه و چشم‌انداز هنری که این انیمیشن برنده جوایز را زنده کرد، از مفهوم اولیه تا شناخت بین‌المللی را کشف کنید."}
@@ -97,12 +97,12 @@ export function StorySection() {
           {stats.map((stat, index) => (
             <Card
               key={index}
-              className="text-center bg-slate-800/60 border-slate-700/50 hover:bg-slate-800/80 hover:border-slate-600 transition-all duration-300 hover:scale-105 hover:shadow-xl backdrop-blur-sm"
+              className="text-center bg-card/50 border-border/50 hover:bg-card/80 hover:border-accent/50 transition-all duration-300 hover:scale-105 hover:shadow-xl backdrop-blur-sm"
             >
               <CardContent className="p-4 sm:p-6 lg:p-8">
-                <stat.icon className="h-6 w-6 sm:h-8 sm:w-8 lg:h-10 lg:w-10 text-amber-400 mx-auto mb-3 sm:mb-4" />
-                <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-1 sm:mb-2">{stat.value}</div>
-                <div className="text-xs sm:text-sm lg:text-base text-amber-200">{stat.label}</div>
+                <stat.icon className="h-6 w-6 sm:h-8 sm:w-8 lg:h-10 lg:w-10 text-primary mx-auto mb-3 sm:mb-4" />
+                <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-foreground mb-1 sm:mb-2">{stat.value}</div>
+                <div className="text-xs sm:text-sm lg:text-base text-muted-foreground">{stat.label}</div>
               </CardContent>
             </Card>
           ))}
@@ -112,7 +112,7 @@ export function StorySection() {
           {behindScenes.map((item, index) => (
             <Card
               key={index}
-              className="overflow-hidden hover:shadow-2xl transition-all duration-500 bg-slate-800/60 border-slate-700/50 hover:bg-slate-800/80 hover:border-slate-600 hover:scale-105 group backdrop-blur-sm"
+              className="overflow-hidden hover:shadow-2xl transition-all duration-500 bg-card/50 border-border/50 hover:bg-card/80 hover:border-accent/50 hover:scale-105 group backdrop-blur-sm"
             >
               <div className="aspect-[4/3] overflow-hidden">
                 <img
@@ -122,19 +122,19 @@ export function StorySection() {
                 />
               </div>
               <CardContent className="p-4 sm:p-6 lg:p-8">
-                <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-white mb-3 sm:mb-4">{item.title}</h3>
-                <p className="text-sm sm:text-base text-amber-100 leading-relaxed">{item.description}</p>
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-foreground mb-3 sm:mb-4">{item.title}</h3>
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{item.description}</p>
               </CardContent>
             </Card>
           ))}
         </div>
 
         <div className="max-w-5xl mx-auto">
-          <Card className="p-6 sm:p-8 lg:p-12 bg-slate-800/60 border-slate-700/50 backdrop-blur-sm hover:bg-slate-800/80 hover:border-slate-600 transition-all duration-300 hover:shadow-2xl">
-            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-4 sm:mb-6 lg:mb-8">
+          <Card className="p-6 sm:p-8 lg:p-12 bg-card/50 border-border/50 backdrop-blur-sm hover:bg-card/80 hover:border-accent/50 transition-all duration-300 hover:shadow-2xl">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-foreground mb-4 sm:mb-6 lg:mb-8">
               {language === "en" ? "The Creative Journey" : "سفر خلاقانه"}
             </h3>
-            <div className="prose prose-sm sm:prose-base lg:prose-lg max-w-none text-amber-100 space-y-4 sm:space-y-6">
+            <div className="prose prose-sm sm:prose-base lg:prose-lg max-w-none text-muted-foreground space-y-4 sm:space-y-6">
               {language === "en" ? (
                 <>
                   <p>
