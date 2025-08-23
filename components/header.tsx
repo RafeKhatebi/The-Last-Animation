@@ -46,7 +46,7 @@ export function Header() {
               <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-amber-600 rounded-lg blur-sm opacity-75 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="relative bg-gradient-to-r from-amber-400 to-amber-600 p-2 rounded-lg overflow-hidden">
                 <img
-                  src="/large.png"
+                  src="/gf.png"
                   alt="Logo"
                   className="h-5 w-5 sm:h-6 sm:w-6 object-cover"
                 />
