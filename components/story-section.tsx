@@ -139,15 +139,15 @@ export function StorySection() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 mb-12 sm:mb-16 lg:mb-20">
             {characters.map((character, index) => (
               <div key={index} className="text-center group">
-                <div className="aspect-square overflow-hidden rounded-2xl mb-4">
+                <div className="aspect-[4/5] overflow-hidden rounded-2xl mb-4">
                   <img
-                    src={character.image || "/placeholder.svg?height=200&width=200"}
+                    src={character.image || "/placeholder.svg?height=250&width=200"}
                     alt={character.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <h4 className="text-lg sm:text-xl font-bold text-foreground mb-2">{character.name}</h4>
-                <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">{character.description}</p>
+                <h4 className="text-lg sm:text-xl font-bold text-foreground mb-3">{character.name}</h4>
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed px-2">{character.description}</p>
               </div>
             ))}
           </div>
