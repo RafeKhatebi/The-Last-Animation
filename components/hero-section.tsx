@@ -27,7 +27,7 @@ export function HeroSection() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-700"
           style={{
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('/cinematic-hero-background.png')`,
+            backgroundImage: `url('/211.jfif')`,
           }}
         />
 
