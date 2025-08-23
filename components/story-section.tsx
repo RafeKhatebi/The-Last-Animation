@@ -50,7 +50,7 @@ export function StorySection() {
         language === "en"
           ? "A brave young dreamer who discovers the power of imagination and leads the journey through mystical realms."
           : "رویاپردازی شجاع که قدرت تخیل را کشف می‌کند و سفر را در قلمروهای اسرارآمیز رهبری می‌کند.",
-      image: "/character-aria.png",
+      image: "/c1.jpg",
     },
     {
       name: language === "en" ? "Echo" : "پژواک",
@@ -58,7 +58,7 @@ export function StorySection() {
         language === "en"
           ? "A mysterious guardian spirit who guides lost souls and protects the balance between worlds."
           : "روح نگهبان اسرارآمیز که ارواح گمشده را راهنمایی کرده و تعادل بین جهان‌ها را حفظ می‌کند.",
-      image: "/character-echo.png",
+      image: "/c11.jpg",
     },
     {
       name: language === "en" ? "Sage" : "حکیم",
@@ -66,7 +66,7 @@ export function StorySection() {
         language === "en"
           ? "An ancient wise mentor whose knowledge spans centuries and holds the key to understanding the past."
           : "مربی حکیم باستانی که دانشش قرن‌ها را در بر می‌گیرد و کلید درک گذشته را در اختیار دارد.",
-      image: "/character-sage.png",
+      image: "/c22.jpg",
     },
     {
       name: language === "en" ? "Luna" : "لونا",
@@ -74,7 +74,7 @@ export function StorySection() {
         language === "en"
           ? "A playful companion with the ability to transform emotions into beautiful light patterns."
           : "همراهی بازیگوش با توانایی تبدیل احساسات به الگوهای نوری زیبا.",
-      image: "/character-luna.png",
+      image: "/c4.jpg",
     },
     {
       name: language === "en" ? "Shadow" : "سایه",
@@ -82,7 +82,7 @@ export function StorySection() {
         language === "en"
           ? "A conflicted antagonist who represents doubt and fear, yet holds unexpected depth and redemption."
           : "آنتاگونیست متضادی که نماینده تردید و ترس است، اما عمق و رستگاری غیرمنتظره‌ای دارد.",
-      image: "/character-shadow.png",
+      image: "/c6.jpg",
     },
     {
       name: language === "en" ? "Phoenix" : "ققنوس",
@@ -90,7 +90,7 @@ export function StorySection() {
         language === "en"
           ? "A majestic creature symbolizing rebirth and hope, appearing at the story's most crucial moments."
           : "موجودی باشکوه که نماد تولد دوباره و امید است و در حساس‌ترین لحظات داستان ظاهر می‌شود.",
-      image: "/character-phoenix.png",
+      image: "/c11.jpg",
     },
   ]
 
