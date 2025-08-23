@@ -53,11 +53,11 @@ export function HeroSection() {
               </h1>
             </div>
 
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-amber-100 mb-8 sm:mb-10 lg:mb-16 max-w-4xl mx-auto leading-relaxed font-light italic px-4 drop-shadow-lg animate-fade-in-up animation-delay-400">
+            {/* <p className="text-sm sm:text-base md:text-lg lg:text-xl text-amber-100 mb-8 sm:mb-10 lg:mb-16 max-w-4xl mx-auto leading-relaxed font-light italic px-4 drop-shadow-lg animate-fade-in-up animation-delay-400">
               {language === "en"
                 ? '"A visual masterpiece that transcends boundaries and touches the soul"'
                 : '"شاهکاری بصری که از مرزها فراتر رفته و روح را لمس می‌کند"'}
-            </p>
+            </p> */}
 
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 sm:gap-3 lg:gap-4 mb-10 sm:mb-12 lg:mb-16 max-w-5xl mx-auto px-4 animate-fade-in-up animation-delay-600">
               {[
