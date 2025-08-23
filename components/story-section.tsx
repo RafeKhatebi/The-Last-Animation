@@ -34,39 +34,63 @@ export function StorySection() {
     {
       icon: Palette,
       label: language === "en" ? "Art Style" : "سبک هنری",
-      value: language === "en" ? "Hand-crafted" : "دست‌ساز",
+      value: language === "en" ? "Hand-crafted" : "دستساز",
     },
     {
       icon: Film,
-      label: language === "en" ? "Festivals" : "جشنواره‌ها",
+      label: language === "en" ? "Festivals" : "جشنوارهها",
       value: language === "en" ? "25+ selections" : "۲۵+ انتخاب",
     },
   ]
 
-  const behindScenes = [
+  const characters = [
     {
-      title: language === "en" ? "Concept Art" : "هنر مفهومی",
+      name: language === "en" ? "Aria" : "آریا",
       description:
         language === "en"
-          ? "Initial sketches and character designs that shaped the visual narrative."
-          : "طرح‌های اولیه و طراحی شخصیت‌هایی که روایت بصری را شکل دادند.",
-      image: "/animation-concept-sketches.png",
+          ? "A brave young dreamer who discovers the power of imagination and leads the journey through mystical realms."
+          : "رویاپردازی شجاع که قدرت تخیل را کشف می‌کند و سفر را در قلمروهای اسرارآمیز رهبری می‌کند.",
+      image: "/character-aria.png",
     },
     {
-      title: language === "en" ? "Animation Process" : "فرآیند انیمیشن",
+      name: language === "en" ? "Echo" : "پژواک",
       description:
         language === "en"
-          ? "Frame-by-frame animation bringing characters to life with fluid motion."
-          : "انیمیشن فریم به فریم که شخصیت‌ها را با حرکت روان زنده می‌کند.",
-      image: "/animation-frames-storyboard.png",
+          ? "A mysterious guardian spirit who guides lost souls and protects the balance between worlds."
+          : "روح نگهبان اسرارآمیز که ارواح گمشده را راهنمایی کرده و تعادل بین جهان‌ها را حفظ می‌کند.",
+      image: "/character-echo.png",
     },
     {
-      title: language === "en" ? "Sound Design" : "طراحی صدا",
+      name: language === "en" ? "Sage" : "حکیم",
       description:
         language === "en"
-          ? "Crafting the perfect audio landscape to complement the visual story."
-          : "خلق منظره صوتی کامل برای تکمیل داستان بصری.",
-      image: "/sound-mixing-studio.png",
+          ? "An ancient wise mentor whose knowledge spans centuries and holds the key to understanding the past."
+          : "مربی حکیم باستانی که دانشش قرن‌ها را در بر می‌گیرد و کلید درک گذشته را در اختیار دارد.",
+      image: "/character-sage.png",
+    },
+    {
+      name: language === "en" ? "Luna" : "لونا",
+      description:
+        language === "en"
+          ? "A playful companion with the ability to transform emotions into beautiful light patterns."
+          : "همراهی بازیگوش با توانایی تبدیل احساسات به الگوهای نوری زیبا.",
+      image: "/character-luna.png",
+    },
+    {
+      name: language === "en" ? "Shadow" : "سایه",
+      description:
+        language === "en"
+          ? "A conflicted antagonist who represents doubt and fear, yet holds unexpected depth and redemption."
+          : "آنتاگونیست متضادی که نماینده تردید و ترس است، اما عمق و رستگاری غیرمنتظره‌ای دارد.",
+      image: "/character-shadow.png",
+    },
+    {
+      name: language === "en" ? "Phoenix" : "ققنوس",
+      description:
+        language === "en"
+          ? "A majestic creature symbolizing rebirth and hope, appearing at the story's most crucial moments."
+          : "موجودی باشکوه که نماد تولد دوباره و امید است و در حساس‌ترین لحظات داستان ظاهر می‌شود.",
+      image: "/character-phoenix.png",
     },
   ]
 
@@ -108,25 +132,30 @@ export function StorySection() {
           ))}
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 mb-12 sm:mb-16 lg:mb-20">
-          {behindScenes.map((item, index) => (
-            <Card
-              key={index}
-              className="overflow-hidden hover:shadow-2xl transition-all duration-500 bg-card/50 border-border/50 hover:bg-card/80 hover:border-accent/50 hover:scale-105 group backdrop-blur-sm"
-            >
-              <div className="aspect-[4/3] overflow-hidden">
-                <img
-                  src={item.image || "/placeholder.svg?height=300&width=400"}
-                  alt={item.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-              <CardContent className="p-4 sm:p-6 lg:p-8">
-                <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-foreground mb-3 sm:mb-4">{item.title}</h3>
-                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{item.description}</p>
-              </CardContent>
-            </Card>
-          ))}
+        <div className="mb-8">
+          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground text-center mb-8 sm:mb-12">
+            {language === "en" ? "Meet the Characters" : "آشنایی با شخصیت‌ها"}
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16 lg:mb-20">
+            {characters.map((character, index) => (
+              <Card
+                key={index}
+                className="overflow-hidden hover:shadow-xl transition-all duration-300 bg-card/40 backdrop-blur-sm border-border/30 hover:bg-card/60 hover:border-accent/40 hover:scale-105 group rounded-2xl"
+              >
+                <div className="aspect-square overflow-hidden">
+                  <img
+                    src={character.image || "/placeholder.svg?height=200&width=200"}
+                    alt={character.name}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <CardContent className="p-4 sm:p-5">
+                  <h4 className="text-lg sm:text-xl font-bold text-foreground mb-2 text-center">{character.name}</h4>
+                  <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed text-center">{character.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
 
         <div className="max-w-5xl mx-auto">
