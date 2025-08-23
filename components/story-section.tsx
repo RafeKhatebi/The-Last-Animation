@@ -136,24 +136,19 @@ export function StorySection() {
           <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground text-center mb-8 sm:mb-12">
             {language === "en" ? "Meet the Characters" : "آشنایی با شخصیت‌ها"}
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16 lg:mb-20">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 mb-12 sm:mb-16 lg:mb-20">
             {characters.map((character, index) => (
-              <Card
-                key={index}
-                className="overflow-hidden hover:shadow-xl transition-all duration-300 bg-card/40 backdrop-blur-sm border-border/30 hover:bg-card/60 hover:border-accent/40 hover:scale-105 group rounded-2xl"
-              >
-                <div className="aspect-square overflow-hidden">
+              <div key={index} className="text-center group">
+                <div className="aspect-square overflow-hidden rounded-2xl mb-4">
                   <img
                     src={character.image || "/placeholder.svg?height=200&width=200"}
                     alt={character.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
-                <CardContent className="p-4 sm:p-5">
-                  <h4 className="text-lg sm:text-xl font-bold text-foreground mb-2 text-center">{character.name}</h4>
-                  <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed text-center">{character.description}</p>
-                </CardContent>
-              </Card>
+                <h4 className="text-lg sm:text-xl font-bold text-foreground mb-2">{character.name}</h4>
+                <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">{character.description}</p>
+              </div>
             ))}
           </div>
         </div>
