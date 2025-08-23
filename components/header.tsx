@@ -14,11 +14,11 @@ export function Header() {
 
   useEffect(() => {
     setMounted(true)
-    
+
     const handleScroll = () => {
       setScrolled(window.scrollY > 20)
     }
-    
+
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
@@ -34,23 +34,26 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out ${
-        scrolled 
-          ? 'bg-background/80 backdrop-blur-xl border-b border-border/30 shadow-lg shadow-primary/5' 
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out ${scrolled
+          ? 'bg-background/80 backdrop-blur-xl border-b border-border/30 shadow-lg shadow-primary/5'
           : 'bg-background/60 backdrop-blur-lg border-b border-border/20'
-      } ${language === "fa" ? "font-arabic" : ""}`}
+        } ${language === "fa" ? "font-arabic" : ""}`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-18 lg:h-20">
           <div className="flex items-center space-x-3 group cursor-pointer">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-amber-600 rounded-lg blur-sm opacity-75 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <div className="relative bg-gradient-to-r from-amber-400 to-amber-600 p-2 rounded-lg">
-                <Film className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
+              <div className="relative bg-gradient-to-r from-amber-400 to-amber-600 p-2 rounded-lg overflow-hidden">
+                <img
+                  src="/large.png"
+                  alt="Logo"
+                  className="h-5 w-5 sm:h-6 sm:w-6 object-cover"
+                />
               </div>
             </div>
             <div className="text-xl sm:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-amber-500 to-amber-700 bg-clip-text text-transparent tracking-tight">
-              Novatech
+              {language === "en" ? "AnimeFest" : "نواتیک"}
             </div>
           </div>
 
@@ -123,7 +126,7 @@ export function Header() {
                     key={item.href}
                     href={item.href}
                     className="text-base font-medium text-foreground/80 hover:text-foreground hover:bg-primary/10 transition-all duration-300 py-3 px-4 rounded-xl hover:scale-105 transform opacity-0 animate-slide-in"
-                    style={{ 
+                    style={{
                       animationDelay: `${index * 100}ms`,
                       animationFillMode: 'forwards'
                     }}
