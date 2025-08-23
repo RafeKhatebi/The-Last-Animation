@@ -59,7 +59,7 @@ export function HeroSection() {
                 : '"شاهکاری بصری که از مرزها فراتر رفته و روح را لمس می‌کند"'}
             </p> */}
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 sm:gap-3 lg:gap-4 mb-10 sm:mb-12 lg:mb-16 max-w-5xl mx-auto px-4 animate-fade-in-up animation-delay-600">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 sm:gap-3 lg:gap-4 mb-10 sm:mb-12 lg:mb-18 max-w-5xl mx-auto px-4 animate-fade-in-up animation-delay-600">
               {[
                 { name: "CANNES", year: "2024", type: language === "en" ? "WINNER" : "برنده" },
                 { name: "ANNECY", year: "2024", type: language === "en" ? "SELECTION" : "انتخاب شده" },
@@ -91,11 +91,11 @@ export function HeroSection() {
               </Button>
             </div>
 
-            <div className="mt-8 sm:mt-12 lg:mt-16 text-amber-200/70 text-xs sm:text-sm px-4 animate-fade-in-up animation-delay-1200">
+            {/* <div className="mt-8 sm:mt-12 lg:mt-16 text-amber-200/70 text-xs sm:text-sm px-4 animate-fade-in-up animation-delay-1200">
               {language === "en"
                 ? "All rights reserved for Animation Studio © 2024"
                 : "تمامی حقوق محفوظ است برای استودیو انیمیشن © ۲۰۲۴"}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
