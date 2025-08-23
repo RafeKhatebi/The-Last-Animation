@@ -50,7 +50,7 @@ export function Header() {
               </div>
             </div>
             <div className="text-xl sm:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-amber-500 to-amber-700 bg-clip-text text-transparent tracking-tight">
-              AnimeFest
+              Novatech
             </div>
           </div>
 
