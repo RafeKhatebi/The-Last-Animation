@@ -22,6 +22,7 @@ export function HeroSection() {
   }, [])
 
   return (
+    // check here does it work or no 
     <section id="home" className="h-screen p-2 sm:p-4 lg:p-5 pt-15 sm:pt-20 lg:pt-20">
       <div className="h-full relative overflow-hidden rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-2xl">
         <div

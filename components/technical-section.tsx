@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Film, Award, Calendar, Globe, Download } from "lucide-react"
 
+
 export function TechnicalSection() {
   const [language, setLanguage] = useState<"en" | "fa">("en")
 
