@@ -211,7 +211,7 @@ export function ContactSection() {
               </CardContent>
             </Card>
 
-            {/* <Card>
+            <Card>
               <CardContent className="p-4 sm:p-6">
                 <h3 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
                   {language === "en" ? "Festival Screenings" : "نمایش در جشنواره‌ها"}
@@ -225,7 +225,7 @@ export function ContactSection() {
                   {language === "en" ? "Request Screening" : "درخواست نمایش"}
                 </Button>
               </CardContent>
-            </Card> */}
+            </Card>
           </div>
         </div>
       </div>
