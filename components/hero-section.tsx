@@ -27,7 +27,7 @@ export function HeroSection() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-700"
           style={{
-            backgroundImage: `url('/211.jfif')`,
+            backgroundImage: `url(/bg2.jpg')`,
           }}
         />
 

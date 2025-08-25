@@ -179,7 +179,7 @@ export function ContactSection() {
                   </div>
                   <div className="flex items-center space-x-3">
                     <Phone className="h-4 w-4 sm:h-5 sm:w-5 text-accent flex-shrink-0" />
-                    <span className="text-sm sm:text-base text-muted-foreground">+1 (555) 123-4567</span>
+                    <span className="text-sm sm:text-base text-muted-foreground">+93 (728) 958423</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-accent flex-shrink-0" />
