@@ -34,11 +34,11 @@ export function StorySection() {
     {
       icon: Palette,
       label: language === "en" ? "Art Style" : "سبک هنری",
-      value: language === "en" ? "Hand-crafted" : "دستساز",
+      value: language === "en" ? "Hand-crafted" : "دست ساز",
     },
     {
       icon: Film,
-      label: language === "en" ? "Festivals" : "جشنوارهها",
+      label: language === "en" ? "Festivals" : "جشنواره ها",
       value: language === "en" ? "25+ selections" : "۲۵+ انتخاب",
     },
   ]

@@ -59,7 +59,18 @@ export function HeroSection() {
                 : '"شاهکاری بصری که از مرزها فراتر رفته و روح را لمس می‌کند"'}
             </p> */}
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 sm:gap-3 lg:gap-4 mb-10 sm:mb-12 lg:mb-18 max-w-5xl mx-auto px-4 animate-fade-in-up animation-delay-600">
+            <div className="animate-fade-in-up animation-delay-1000 mb-8 sm:mb-10 lg:mb-12">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-500 hover:to-amber-400 text-white px-6 sm:px-8 lg:px-12 py-3 sm:py-4 lg:py-5 text-sm sm:text-base lg:text-lg font-semibold rounded-full shadow-2xl border-2 border-amber-400/50 hover:border-amber-300/70 transition-all duration-300 hover:scale-105 hover:shadow-amber-500/25 active:scale-95"
+                onClick={() => setShowVideoModal(true)}
+              >
+                <Play className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 mr-2 sm:mr-3" />
+                {language === "en" ? "Watch Animation" : "تماشای انیمیشن"}
+              </Button>
+            </div>
+
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 sm:gap-3 lg:gap-4 mb-6 sm:mb-8 lg:mb-10 max-w-5xl mx-auto px-4 animate-fade-in-up animation-delay-1200">
               {[
                 { name: "CANNES", year: "2024", type: language === "en" ? "WINNER" : "برنده" },
                 { name: "ANNECY", year: "2024", type: language === "en" ? "SELECTION" : "انتخاب شده" },
@@ -71,7 +82,7 @@ export function HeroSection() {
                 <div
                   key={index}
                   className="bg-black/20 backdrop-blur-sm border border-amber-400/30 rounded-xl p-2 sm:p-3 lg:p-4 text-center hover:bg-black/30 hover:border-amber-400/50 transition-all duration-300 hover:scale-105 hover:shadow-lg"
-                  style={{ animationDelay: `${600 + index * 100}ms` }}
+                  style={{ animationDelay: `${1200 + index * 100}ms` }}
                 >
                   <div className="text-amber-300 text-xs sm:text-sm font-semibold mb-1">{award.type}</div>
                   <div className="text-white text-xs sm:text-sm lg:text-base font-bold">{award.name}</div>
@@ -79,23 +90,6 @@ export function HeroSection() {
                 </div>
               ))}
             </div>
-
-            <div className="animate-fade-in-up animation-delay-1000 -mt-1">
-              <Button
-                size="lg"
-                className="bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-500 hover:to-amber-400 text-white px-6 sm:px-8 lg:px-12 py-3 sm:py-4 lg:py-5 text-sm sm:text-base lg:text-lg font-semibold rounded-full shadow-2xl border-2 border-amber-400/50 hover:border-amber-300/70 transition-all duration-300 hover:scale-105 hover:shadow-amber-500/25 active:scale-95"
-                onClick={() => setShowVideoModal(true)}
-              >
-                <Play className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 mr-2 sm:mr-3" />
-                {language === "en" ? "Watch Animation" : "تماشای انیمیشن"}
-              </Button>
-            </div>
-
-            {/* <div className="mt-8 sm:mt-12 lg:mt-16 text-amber-200/70 text-xs sm:text-sm px-4 animate-fade-in-up animation-delay-1200">
-              {language === "en"
-                ? "All rights reserved for Animation Studio © 2024"
-                : "تمامی حقوق محفوظ است برای استودیو انیمیشن © ۲۰۲۴"}
-            </div> */}
           </div>
         </div>
       </div>
