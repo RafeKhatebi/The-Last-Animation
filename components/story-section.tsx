@@ -42,7 +42,7 @@ export function StorySection() {
       value: language === "en" ? "25+ selections" : "۲۵+ انتخاب",
     },
   ]
-
+// The characters are:
   const characters = [
     {
       name: language === "en" ? "Aria" : "آریا",
