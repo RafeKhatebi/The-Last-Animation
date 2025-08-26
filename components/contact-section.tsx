@@ -33,7 +33,7 @@ export function ContactSection() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    
+
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
@@ -42,7 +42,7 @@ export function ContactSection() {
         },
         body: JSON.stringify(formData),
       })
-      
+
       if (response.ok) {
         alert(language === "en" ? "Message sent successfully!" : "پیام با موفقیت ارسال شد!")
         setFormData({ name: "", email: "", subject: "", message: "" })
@@ -69,7 +69,7 @@ export function ContactSection() {
   ]
 
   return (
-    <section id="contact" className={`py-16 sm:py-20 lg:py-24 bg-background ${language === "fa" ? "font-arabic" : ""}`}>
+    <section id="contact" className={`py-12 sm:py-16 lg:py-20 bg-background ${language === "fa" ? "font-arabic" : ""}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
           <Badge variant="outline" className="mb-4">

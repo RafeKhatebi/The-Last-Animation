@@ -23,7 +23,7 @@ export function TeamSection() {
 
   const teamMembers = [
     {
-      name: language === "en" ? "Sarah Johnson" : "سارا جانسون",
+      name: language === "en" ? "Shah " : "شاه میر",
       role: language === "en" ? "Director & Animator" : "کارگردان و انیماتور",
       image: "/te1.jpg",
     },

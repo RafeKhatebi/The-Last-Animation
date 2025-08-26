@@ -47,7 +47,7 @@ export function TechnicalSection() {
         subtitles: "Available in 8 languages",
       },
       awardsList: [
-        "Best Animation - Tehran International Film Festival 2024",
+        "Best Animation - Kabul International Film Festival 2024",
         "Audience Choice Award - Animation Festival 2024",
         "Excellence in Storytelling - Digital Arts Festival",
       ],
@@ -83,7 +83,7 @@ export function TechnicalSection() {
         subtitles: "موجود در ۸ زبان",
       },
       awardsList: [
-        "بهترین انیمیشن - جشنواره بین‌المللی فیلم تهران ۲۰۲۴",
+        "بهترین انیمیشن - جشنواره بین‌المللی فیلم کابل ۲۰۲۴",
         "جایزه انتخاب تماشاگران - جشنواره انیمیشن ۲۰۲۴",
         "برتری در داستان‌سرایی - جشنواره هنرهای دیجیتال",
       ],
@@ -99,7 +99,7 @@ export function TechnicalSection() {
   const t = content[language]
 
   return (
-    <section className={`py-16 md:py-24 bg-gradient-to-b from-background to-muted/20 ${language === "fa" ? "font-arabic" : ""}`}>
+    <section className={`py-16 md:py-20 bg-gradient-to-b from-background to-muted/20 ${language === "fa" ? "font-arabic" : ""}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">

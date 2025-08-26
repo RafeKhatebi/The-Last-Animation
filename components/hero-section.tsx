@@ -53,13 +53,6 @@ export function HeroSection() {
                 )}
               </h1>
             </div>
-
-            {/* <p className="text-sm sm:text-base md:text-lg lg:text-xl text-amber-100 mb-8 sm:mb-10 lg:mb-16 max-w-4xl mx-auto leading-relaxed font-light italic px-4 drop-shadow-lg animate-fade-in-up animation-delay-400">
-              {language === "en"
-                ? '"A visual masterpiece that transcends boundaries and touches the soul"'
-                : '"شاهکاری بصری که از مرزها فراتر رفته و روح را لمس می‌کند"'}
-            </p> */}
-
             <div className="animate-fade-in-up animation-delay-1000 mb-8 sm:mb-10 lg:mb-12">
               <Button
                 size="lg"
