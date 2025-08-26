@@ -131,8 +131,8 @@ export function StorySection() {
             </Card>
           ))}
         </div>
-
-        <div className="mb-8">
+        {/* کامنت شده برای بررسی  */}
+        {/* <div className="mb-8">
           <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground text-center mb-8 sm:mb-12">
             {language === "en" ? "Meet the Characters" : "آشنایی با شخصیت‌ها"}
           </h3>
@@ -151,7 +151,45 @@ export function StorySection() {
               </div>
             ))}
           </div>
+        </div> */}
+
+        {/* جدید تستس */}
+        <div className="mb-8">
+          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground text-center mb-8 sm:mb-12">
+            {language === "en" ? "Meet the Characters" : "آشنایی با شخصیت‌ها"}
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 mb-12 sm:mb-16 lg:mb-20">
+            {characters.map((character, index) => (
+              <div
+                key={index}
+                className="text-center group perspective"
+              >
+                <div
+                  className="relative aspect-[4/5] overflow-hidden rounded-2xl mb-4 
+                     transform-style-preserve-3d transition-transform duration-[2000ms] 
+                     animate-slow-spin hover:animate-none cursor-pointer"
+                  onClick={(e) => {
+                    e.currentTarget.classList.toggle("rotate-y-180");
+                  }}
+                >
+                  <img
+                    src={character.image || "/placeholder.svg?height=250&width=200"}
+                    alt={character.name}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <h4 className="text-lg sm:text-xl font-bold text-foreground mb-3">
+                  {character.name}
+                </h4>
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed px-2">
+                  {character.description}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
+
+        {/* نهایت */}
 
         <div className="max-w-5xl mx-auto">
           <Card className="p-6 sm:p-8 lg:p-12 bg-card/50 border-border/50 backdrop-blur-sm hover:bg-card/80 hover:border-accent/50 transition-all duration-300 hover:shadow-2xl">
