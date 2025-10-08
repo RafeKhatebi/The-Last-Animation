@@ -2,6 +2,21 @@
 
 A professional, bilingual (English/Persian) website showcasing "The Last Animation" - an award-winning animated short film. Built with Next.js 15, TypeScript, and Tailwind CSS.
 
+## 📸 Screenshots
+
+### Desktop View
+![Hero Section](./reimage/Screenshot%202025-10-08%20213916.png)
+*Hero section with bilingual support and award showcase*
+
+![Story & Characters](./reimage/Screenshot%202025-10-08%20213957.png)
+*Behind-the-scenes story and character profiles*
+
+![Technical Specs](./reimage/Screenshot%202025-10-08%20214027.png)
+*Professional technical specifications and festival awards*
+
+![Contact Section](./reimage/Screenshot%202025-10-08%20214100.png)
+*Contact form and social media integration*
+
 ## 🎬 Features:
 
 ### Core Functionality
@@ -13,13 +28,14 @@ A professional, bilingual (English/Persian) website showcasing "The Last Animati
 
 ### Sections
 - **Hero Section**: Full-screen slide with animation title and awards
-- **Story Section**: Behind-the-scenes content and creative process
+- **Story Section**: Behind-the-scenes content and creative process with 3D character models
 - **Team Section**: Meet the creative team with photos and roles
 - **Technical Section**: Professional specifications and festival selections
 - **Contact Section**: Contact form and social media links
 - **Footer**: Quick links and recognition details
 
 ### Professional Features
+- **3D Character Models**: Interactive 3D models using model-viewer with auto-rotate and camera controls
 - **SEO Optimized**: Complete meta tags and Open Graph support
 - **Press Kit Download**: Downloadable press materials
 - **Festival Awards**: Showcase of international recognition
@@ -73,13 +89,16 @@ animation-showcase/
 │   ├── header.tsx           # Navigation header
 │   ├── hero-section.tsx     # Main hero section
 │   ├── story-section.tsx    # Story and behind-the-scenes
+│   ├── characters-3d-section.tsx # 3D character models section
 │   ├── team-section.tsx     # Team member profiles
 │   ├── technical-section.tsx # Technical specs and awards
 │   ├── contact-section.tsx  # Contact form and info
 │   ├── footer.tsx           # Site footer
 │   ├── video-modal.tsx      # Video player modal
 │   └── scroll-to-top.tsx    # Scroll to top button
-├── public/                  # Static assets and images
+├── public/
+│   ├── models/              # 3D character model files (.glb/.gltf)
+│   └── ...                  # Other static assets and images
 └── lib/                     # Utility functions
 ```
 
@@ -128,6 +147,7 @@ Replace placeholder images in `/public/`:
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS v4
 - **UI Components**: shadcn/ui + Radix UI
+- **3D Models**: Google Model Viewer for interactive 3D character display
 - **Icons**: Lucide React
 - **Fonts**: Geist Sans, Noto Sans Arabic
 - **Theme**: next-themes for dark/light mode
